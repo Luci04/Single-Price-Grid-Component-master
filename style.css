@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;800&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Karla";
+  font-size: 16px;
+  background-color: var(--light-gray);
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-component {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.component {
+  height: 50%;
+  box-shadow: 0px 17px 26px -2px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 17px 26px -2px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 17px 26px -2px rgba(0, 0, 0, 0.47);
+  max-width: 40%;
+}
+
+.community-sec {
+  background-color: white;
+  padding: 40px;
+}
+
+.community-sec h2 {
+  color: var(--cyan);
+  font-size: 1.5rem;
+}
+
+.community-sec .sub-title {
+  color: var(--bright-yellow);
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.community-sec .sub-content {
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+.info-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sub-sec {
+  padding: 25px;
+  background-color: hsl(179, 50%, 45%);
+  color: white;
+}
+
+.sub-sec-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.price-info {
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 30px;
+  position: relative;
+}
+
+.price-info span {
+  position: absolute;
+  display: inline-block;
+  font-size: 15px;
+  color: var(--light-gray);
+  padding: 10px;
+  top: -2px;
+}
+
+.sub-sec p {
+  color: var(--light-gray);
+  padding: 0 0 10px 0;
+}
+
+.sub-sec button {
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  padding: 12px;
+  font-family: "Karla";
+  font-weight: 700;
+  background-color: var(--bright-yellow);
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0px 9px 10px -4px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 9px 10px -4px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 9px 10px -4px rgba(0, 0, 0, 0.47);
+}
+
+.us-sec {
+  padding: 25px;
+  background-color: hsl(179, 72%, 44%);
+}
+
+.us-sec h3 {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 16px;
+}
+
+.us-sec .us-content li {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(243, 237, 237);
+}
+
+@media screen and (max-width: 500px) {
+  .component {
+    max-width: 80%;
+  }
+
+  .info-sec {
+    grid-template-columns: 1fr;
+  }
+}
